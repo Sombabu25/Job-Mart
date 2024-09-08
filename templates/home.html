@@ -89,11 +89,11 @@
 
 
 
-        
+
     </style>
 
 </head>
-    
+
 <body>
     <div id="container">
 
@@ -109,33 +109,32 @@
         A Job Mart can be incredibly useful as it serves centralized platform where job seekers and employers can efficiently
          connect. For job seekers, it offers access to a wide range of job opportunities, making it easier to find positions that align with 
          their skills and career goal...</p>
-    <h3>Job Openings</h3>
-    <hr>
-    <h6 id="1">Data Analyst   <button class="btn btn-info" id="button3-apply"> Apply           </button>  <br> Bangluru, Karnataka </h6> 
-    <hr>
-
-    <h6>Data Scientist   <button id="button2-apply" class="btn btn-info"> Apply </button>      <br> Bangluru, Karnataka </h6>
-    <hr>
-
-    <h6>Software Engineer   <button id="button3-apply" class="btn btn-info"> Apply             </button>  <br> Kakinada, AndraPradesh </h6>
-    <hr>
-
-    <h6>DevOps Intern   <button id="button4-apply" class="btn btn-info"> Apply </button>      <br> Pune, Maharashtra </h6>
-    <hr>
+    <h3 class='text-center mt-4 mb-5'>Job Openings</h3>
 
 
 
-    <div id="button" class="d-grid gap-2 d-md-block">
-        <button type="button" class="btn btn-success " >Contact us...</button>
-    <p id="botton-copywrite" class="mt-4">copyright 2022, Sombabu</p>
+      <div class="mb-10">
+
+
+          {% for job in jobs %}
+          
+         {% include 'job-items.html' %}
+    
+          {% endfor %}
+     
+      </div>
+
+
+
+
+
+        
+  <div class="text-center">
+  <button  class="btn btn-primary btn-lg ">contact Us</button>
+        <p class="mt-4">Copyright 2024 @sombabu</p>
     </div>
 
-
-    </div>
-
-
-
-
+      
 
 </body>
 </html>
